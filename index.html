@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleciane de A. de Souza </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav> <!--Menu de navegação, no topo da pagina-->
+            <ul>
+                <li><a href="#secao-home">Home</a></li>
+                <li><a href="#secao-sm">Sobre mim</a></li>
+                <li><a href="#secao-formacao">Formação</a></li>
+                <li><a href="#secao-projetos">Portifólio</a></li>
+                <li><a href="#secao-form">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="secao-home" > <!--Seçao home-->
+            <div class="container-home">
+                <div class="texto-home">
+                    <h1>Olá!</h1>
+                    <h2>Sou Cleciane Souza,</h2>
+                    <p>Estudante de Análise e Desenvolvimento de Sistemas, encantada e desbravando o fascinante universo da tecnologia!</p>
+                </div>
+                <div class="img-home">
+                    <img src="imagens/foto.ane.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="secao-sm" > <!--Seção sobre mim-->
+            <div class="container-sobremim">
+                <h2>Um pouco sobre mim :)</h2>
+                <div class="sobremim">
+                    <img id="img-sobremim" src="imagens/foto.ane.jpg" alt="">
+                    <p>Sou Cleciane,  estou dando os primeiros passos na faculdade de Análise e Desenvolvimento de Sistemas. <br> <br> Antes disso, minha trajetória passou por outros caminhos bem diferentes da tecnologia, e mesmo sem experiência mergulhei nesse novo universo com empolgação e muita curiosidade. <br> <br> Amo viajar, assistir doramas, fotografar e sou apaixonada por dias frios. <br> <br> Cada aula é uma descoberta, e sigo animada com tudo o que ainda vem pela frente!
+                    <img src="imagens/linha.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="secao-formacao"> <!--Seção formação-->
+            <div class="container-formacao">
+                <div class="paralax"></div> <!--div para o efeito parallax-->
+                <div class="cont-formacao">
+                    <h2>Formação acadêmica</h2>
+                    <h3>Graduaçao em Análise e Desenvolvimento de Sistemas </h3>
+                    <p>Conclusão prevista 2027</p>
+                    <p>UNINTER - Centro Universitário Internacional</p>
+                    <h3>Cursos complementares</h3>
+                    <h3>HTML - CSS</h3>
+                    <p>Conclusão 2024</p>
+                    <p>Curso em Vídeo</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="secao-projetos"> <!--Seção de projetos já feitos-->
+            <div class="container-projetos">
+                <h2>O que já saiu do papel :)</h2>
+                <p>Projetos que refletem minha evolução como estudante de TI e contam um pouco da minha trajetória.</p>
+                <div class="img-projetos"> <!--Imagens/logo das páginas já feitas-->
+                    <a href="https://clecianesouza.github.io/site-skincare/" target="_blank"><img src="imagens/clair.png" alt=""></a>
+                    <a href="https://clecianesouza.github.io/site-meudorama/" target="_blank"><img src="imagens/meudorama.png" alt=""></a>
+                    <a href="https://clecianesouza.github.io/site-mundomagia/" target="_blank"><img src="imagens/mundomagia.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="secao-form" > <!--Seção do formulário de contato-->
+            <div class="container-form">
+                <div class="text-form">
+                    <h2>Entre em contato</h2>
+                    <p>É só me manda um "oi" através do <br> formulário ao lado!</p>
+                    <img src="imagens/linha.png" alt="">
+                </div>
+                <div class="card-form">
+                    <form action="" method="post">
+                        <p>Contato</p>
+                        <div class="nome">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome">
+                        </div>
+                        <div class="nome">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="msg">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea name="mensagem" id="mensagem"></textarea>
+                        </div>
+                        <button type="submit">Enviar sua mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>   
+    <footer>
+        <p>Site desenvolvido por Cleciane de A. de Souza. Junho/2025</p>
+    </footer>
+</body>
+</html>

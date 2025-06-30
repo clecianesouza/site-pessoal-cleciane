@@ -1,0 +1,292 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { /*Aplica as configurações em todo o body*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+}
+
+/*menu de navegação*/
+nav { 
+    display: flex;
+    justify-content: center; /*centralizar o menu na página*/
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav a {
+    color: #9083e6;
+    text-decoration: none; /*remover sublinhado dos links*/
+    font-weight: bolder;
+    margin: 0 20px;
+    padding: 6px;
+}
+
+nav a:hover { /*mudar a cor das catergorias do menu ao passar o mouse*/
+    color: black;
+    border-radius: 50px;
+    background-color: #9083e6;
+}
+
+/*seção home*/
+.container-home {
+    display: flex;
+    height: 500px;
+    background-color: black;
+}
+
+.texto-home {
+    margin: auto;
+    margin-left: 300px;
+}
+.texto-home h1 {
+    font-size: 90px;
+    color: white;
+    font-weight: bolder;
+}
+
+.texto-home h2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #9083e6;
+}
+
+.texto-home p {
+    margin-top: 5px;
+    height: 100px;
+    width: 250px;
+    color: white;
+}
+
+.img-home {
+    margin: auto;
+    margin-right: 300px;
+}
+
+.img-home img {
+    box-shadow: 0 0 10px 1px #9083e6; /*adicionar sombra em volta da imagem*/
+    width: 400px;
+    height: 400px;
+    border-radius: 50%; /*deixar a imagem redonda*/
+    object-fit: cover; /*nao deixa a imagem ficar achatada*/
+}
+
+/*seção sobre mim*/
+.container-sobremim {
+    color: white;
+    height: 650px;
+    background-color: #9083e6;
+}
+
+.container-sobremim h2 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.sobremim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 30px;
+}
+.sobremim p{
+    text-align: justify; /*Deixar texto justificado*/
+    width: 450px;
+    height: 250px;
+}
+
+#img-sobremim {
+    box-shadow: 0 0 8px 1px black;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(100%); /*deixar imagem em escala de cinza*/
+}
+
+#img-sobremim:hover {
+    filter: grayscale(0%); /*ao passar o mouse devolve cor da imagem que estava em escala de cinza*/
+}
+
+/*seção formação*/
+.container-formacao {
+    height: 700px;
+    background-color: black;
+    color: white;
+}
+
+.paralax {
+    background: url(imagens/foto.formacao.png) bottom center/cover no-repeat fixed; /*efeito parallax*/
+    height: 350px;
+}
+
+.cont-formacao{
+    margin-top: 40px;
+    margin-left: 250px;
+}
+
+.cont-formacao h2{
+    margin-top: 40px;
+    color: #9083e6;
+    font-size: 40px;
+}
+
+.cont-formacao h3{
+    margin-top: 20px;
+}
+
+/*seção projetos/portifólio*/
+.container-projetos {
+    height: 500px;
+    background-color: black;
+    padding-top: 30px;
+}
+
+.container-projetos h2 {
+    color: #9083e6;
+    font-size: 40px;
+    text-align: center;
+}
+
+.container-projetos p {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.img-projetos {   
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    padding: 20px;
+    width: 1000px;
+    height: 300px;
+}
+
+.img-projetos img {
+    margin-top: 30px;
+    width: 200px;
+}
+
+.img-projetos a:hover {
+    filter: grayscale(100%);
+}
+
+/*seção contato/formulario*/
+.container-form {
+    background-color: #9083e6;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-form {
+    width: 400px;
+    height: 150px;
+}
+
+.text-form h2 {
+    font-size: 40px;
+}
+
+.text-form p {
+    color: white;
+
+}
+.text-form img {
+    width: 100%;
+}
+
+.card-form {
+    display: flex;
+    margin-left: 10px;
+    width: 700px;
+    background-color: white;
+    height: 400px;
+    border-radius: 40px;
+}
+
+.card-form form {
+    margin: auto;
+    width: 600px;
+    height: 350px;
+}
+
+.card-form p {
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.nome {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 600px;
+    height: 30px;
+    background-color: #9083e6;
+    color: white;
+    border-radius: 30px;
+}
+
+.card-form label {
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.card-form input {
+    border: none;
+    background-color: #9083e6;
+}
+
+.msg {
+    color: white;
+    width: 600px;
+    height: 120px;
+    border-radius: 20px;
+    background-color: #9083e6;
+
+}
+
+.msg textarea {
+    width: 300px;
+    resize: none;
+    border: none;
+    background-color: #9083e6;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #9083e6;
+    color: white;
+    font-weight: bold;
+    border: none;
+    width: 180px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+footer {
+    background-color: black;
+    color: #9083e6;
+    text-align: center;
+}
+
